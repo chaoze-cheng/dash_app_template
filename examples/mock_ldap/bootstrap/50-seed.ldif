@@ -1,0 +1,107 @@
+dn: ou=people,dc=example,dc=org
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=example,dc=org
+objectClass: organizationalUnit
+ou: groups
+
+dn: uid=admin01,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+cn: Admin One
+sn: One
+uid: admin01
+mail: admin01@example.org
+userPassword: Test123456
+
+dn: uid=admin02,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+cn: Admin Two
+sn: Two
+uid: admin02
+mail: admin02@example.org
+userPassword: Test123456
+
+dn: uid=dev01,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+cn: Developer One
+sn: One
+uid: dev01
+mail: dev01@example.org
+userPassword: Test123456
+
+dn: uid=dev02,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+cn: Developer Two
+sn: Two
+uid: dev02
+mail: dev02@example.org
+userPassword: Test123456
+
+dn: uid=dev03,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+cn: Developer Three
+sn: Three
+uid: dev03
+mail: dev03@example.org
+userPassword: Test123456
+
+dn: uid=test01,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+cn: Tester One
+sn: One
+uid: test01
+mail: test01@example.org
+userPassword: Test123456
+
+dn: uid=test02,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+cn: Tester Two
+sn: Two
+uid: test02
+mail: test02@example.org
+userPassword: Test123456
+
+dn: uid=test03,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+cn: Tester Three
+sn: Three
+uid: test03
+mail: test03@example.org
+userPassword: Test123456
+
+dn: uid=user01,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+cn: User One
+sn: One
+uid: user01
+mail: user01@example.org
+userPassword: Test123456
+
+dn: uid=user02,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+cn: User Two
+sn: Two
+uid: user02
+mail: user02@example.org
+userPassword: Test123456
+
+dn: cn=admins,ou=groups,dc=example,dc=org
+objectClass: groupOfNames
+cn: admins
+member: uid=admin01,ou=people,dc=example,dc=org
+member: uid=admin02,ou=people,dc=example,dc=org
+
+dn: cn=developers,ou=groups,dc=example,dc=org
+objectClass: groupOfNames
+cn: developers
+member: uid=dev01,ou=people,dc=example,dc=org
+member: uid=dev02,ou=people,dc=example,dc=org
+member: uid=dev03,ou=people,dc=example,dc=org
+
+dn: cn=testers,ou=groups,dc=example,dc=org
+objectClass: groupOfNames
+cn: testers
+member: uid=test01,ou=people,dc=example,dc=org
+member: uid=test02,ou=people,dc=example,dc=org
+member: uid=test03,ou=people,dc=example,dc=org
