@@ -1,0 +1,10 @@
+:root {
+  --font-size-base: 16px;
+  --font-size-min: 14px;
+  --nav-bg: #ffffff;
+  --nav-border: #e2e8f0;
+}
+body { font-size: var(--font-size-base); font-family: Arial, sans-serif; }
+.example-navbar { display: flex; gap: 20px; padding: 14px 20px; background: var(--nav-bg); border-bottom: 1px solid var(--nav-border); }
+.example-nav-link { font-size: var(--font-size-base); color: #1d4ed8; text-decoration: none; }
+.example-nav-link:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 3px; }
