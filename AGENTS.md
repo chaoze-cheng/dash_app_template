@@ -416,3 +416,7 @@ assets/
 
 - **OPTIONAL** 对确需跨 App 同步升级的稳定代码，单独提取可安装的共享 Python Package；此举不改变 `examples/` 仅作为参考代码的定位。
 
+## UID 实体标识开发约定
+
+- **MUST** 涉及业务实体 UID、新建表 UID、前缀命名或 UID 数据迁移时，先遵循 [`docs/UID_CONVENTIONS.md`](docs/UID_CONVENTIONS.md)。该文件是 4 位 prefix + UUIDv7 格式、Prefix Registry 与兼容迁移规则的唯一权威来源。
+- **MUST** 现有数据库改造默认保留现有 `id` 及外键，采用渐进式引入 `uid`；未经独立审核不得重建数据库或以 `create_all()` 替代 Alembic。
